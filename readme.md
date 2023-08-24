@@ -46,20 +46,27 @@ This TK Application is designed to automate the image generation process, simila
 1. Extract the Cookie value (See below)
 2. Fill in the "Cookies" tab using two methods:
    1. **Method 1 (Short-Term):** Enter the cookie address in the respective row, as shown:
+
       ![Short-time row filling](assets/img_2.png)
    2. **Method 2 (Permanent):** Open the **_.env_** file and input the cookie(s):
       ![.env screenshot](assets/img_4.png). After that, launch the software (**_synchro.py_**).
 3. Check if the cookie works by clicking the "**_check_**" button in the corresponding row:
+
    ![The Check Button](assets/img_3.png)
 4. Select a row with a coin value > 0:
+
    ![Selection](assets/img_5.png)
 5. Write your request in the "Request" window. If you have no preferences, the output directory will default to "/output" or the value in the .env file. Click the "**_ENTER Button_**" after completing your request:
+
    ![The request window](assets/img_6.png)
 6. Choose the output directory by clicking "**_Choose_**" or manually entering the ABSOLUTE PATH (not the relative PATH). By default, the value of the constant **OUTDIR** in **_.env_** is used; otherwise, the value "**/output**" is assigned:
+
    ![Directory screenshot](assets/img_7.png)
 7. Select the **maximum** number of images to download **(1-4)**:
+
    ![Download number](assets/img_8.png)
 8. Click the "Run" button:
+
    ![The run button](assets/img_9.png)
 
 ## Steps to use:
@@ -78,14 +85,19 @@ This TK Application is designed to automate the image generation process, simila
 
 1. Go to [Bing.com/create](https://bing.com/create).
 2. Click on the "Join and Create" button ("**Rejoindre et créer**" in French):
+
    ![img_10.png](assets/img_10.png)
 3. Log in to your Hotmail/Outlook account:
+
    ![outlook connection](assets/img_11.png)
 4. After logging in, you'll return to the bing.com/Create page. Press **F12** to open the Developer Console:
+
    ![Dev Console](assets/img_12.png)
 5. Navigate to the Storage tab ("Stockage" in French):
+
    ![Storage Tab](assets/img_13.png)
 6. Select the value with "**_U**", then click the right mouse button and select "**Copy**":
+
    ![Cookie in Firefox](assets/cookie_firefox.png)
 7. Paste it into the **.env** file to save these steps for later or directly into the software.
 
@@ -93,17 +105,23 @@ This TK Application is designed to automate the image generation process, simila
 
 1. Go to [Bing.com/create](https://bing.com/create).
 2. Click on the "Join and Create" button ("**Rejoindre et créer**" in French):
+
    ![img_10.png](assets/img_10.png)
 3. Log in to your Hotmail/Outlook account:
+
    ![outlook connection](assets/img_11.png)
 4. After logging in, you'll return to the bing.com/Create page. Press **F12** to open the Developer Console:
+
    ![Dev Console](assets/img_14.png)
 5. Navigate to the Console tab:
+
    ![Console Tab](assets/img_15.png)
 6. Enter the following code and press Enter:
+
    ```js
    cookieStore.get("_U").then(result => console.log(result.value))
    ```
+
    ![Cookie in Chrome](assets/cookie_chrome.png)
 7. Copy the Cookie Address to the **.env** file to save these steps for later or directly into the software.
 
